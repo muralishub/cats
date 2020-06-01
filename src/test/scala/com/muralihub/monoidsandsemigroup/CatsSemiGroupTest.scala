@@ -1,7 +1,7 @@
-package com.muralihub
+package com.muralihub.monoidsandsemigroup
 
+import com.muralihub.monoidsandsemigroup.CatsSemiGroup._
 import org.scalatest.funspec.AnyFunSpec
-import CatsSemiGroup._
 import org.scalatest.matchers.should.Matchers._
 
 class CatsSemiGroupTest extends AnyFunSpec {

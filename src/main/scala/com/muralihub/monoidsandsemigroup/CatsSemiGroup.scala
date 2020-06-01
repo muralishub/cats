@@ -1,6 +1,5 @@
-package com.muralihub
+package com.muralihub.monoidsandsemigroup
 
-import cats.Semigroup._
 import cats.implicits._
 
 object CatsSemiGroup {
@@ -10,7 +9,7 @@ object CatsSemiGroup {
   //a combine(b combine c) should be equal to (a combine b) combine c
   //as a result we can do a combine b on one thread and b combine c in other thread
 
-val combineInt = 1 |+| 3
+val  combineInt = 1 |+| 3
 val combineString = "murali" |+| "raju"
 val combineOptions = Option(3) |+| Option(2)
 val combineMaps = Map(1 -> "one",  2 -> "two") |+| Map(3 -> "three",  4 -> "four", 5 -> "")

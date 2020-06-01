@@ -1,4 +1,4 @@
-package com.muralihub
+package com.muralihub.typeclass
 
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers._
