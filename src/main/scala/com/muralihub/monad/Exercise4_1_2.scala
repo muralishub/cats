@@ -1,9 +1,5 @@
 package com.muralihub.monad
 
-
-import cats.{Functor, Monad}
-import cats.instances._
-
 object Exercise4_1_2 {
 // we can define a functor using existing monads flatmap and pure
 

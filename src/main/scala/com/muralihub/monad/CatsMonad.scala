@@ -1,10 +1,7 @@
 package com.muralihub.monad
 
-import cats.Monad
-
 import scala.util.Try
-import cats.Monad._
-import cats.instances._
+import scala.language.higherKinds
 
 
 object CatsMonad extends App {
@@ -33,15 +30,15 @@ object CatsMonad extends App {
   //for comprehension or flatMap its all about sequencing so Future is executed in sequence if we have Future instead of Opiton
 
 
-def monadLaws[F](implicit monad: Monad[Option[Int]]) = {
+//def monadLaws[F](implicit monad: Monad[Option[Int]]) = {
 
-  val f: Int => Option[Int] = (x:Int) => Option(x)
-  val g = (x: String) => Option(x)
+  //val f: Int => Option[Int] = (x:Int) => Option(x)
+//  val g = (x: String) => Option(x)
 
  //left identity
- monad.pure(2).flatMap(f) == f(2)
+ //monad.pure(2).flatMap(f) == f(2)
  //right identity
-  monad.flatMap(monad.pure(2)) == monad
+ // monad.flatMap(monad.pure(2)) == monad
   // associativity flat mapping over 2 functions and g is same as flat mapping f and then flatmapping g
 
 
@@ -49,7 +46,7 @@ def monadLaws[F](implicit monad: Monad[Option[Int]]) = {
 
 
 
-}
+//}
 
 
 
