@@ -28,7 +28,7 @@ object TransformingEithers extends App {
   val rightMap: Either[String, Int] = 1.asRight[String].bimap(_.reverse, _ * 7)
   // res17: Either[String,Int] = Right(42)
 
-  val leftMap = "foo".asLeft[String].bimap(_.reverse, _ * 7)
+  val leftMap1 = "foo".asLeft[String].bimap(_.reverse, _ * 7)
   // res18: Either[String,Int] = Left(oof)
 
   val either: Either[String, Int] = 123.asRight[String]
