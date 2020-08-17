@@ -1,5 +1,9 @@
 package com.muralihub.semigroupalandapplicative
 
+import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.{Failure, Success}
+
 object MethodsOfValidated  extends App{
 
   import cats.data.Validated
